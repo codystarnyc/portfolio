@@ -2,33 +2,6 @@
 
 /* -------------------------------- 
 
-Primary style
-
--------------------------------- */
-*, *::after, *::before {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: "Hind", sans-serif;
-  color: #25283D;
-  background-color: #ECF0F1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  color: #8F3985;
-  text-decoration: none;
-}
-
-/* -------------------------------- 
-
 1. Auto-Hiding Navigation - Simple
 
 -------------------------------- */
@@ -1327,7 +1300,7 @@ Content Sections - basic style
   /* vertically align <div> inside <section> */
   display: table-cell;
   vertical-align: middle;
-  text-align: center;
+  text-align: justify;
 }
 .cd-section h1, .cd-section h2 {
   width: 90%;
