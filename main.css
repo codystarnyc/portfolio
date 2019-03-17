@@ -14,9 +14,7 @@ a {
 a:hover {
   color: rgb(50, 76, 147)
 }
-.first-name {
-  color: rgba(43, 149, 232, 0.76)
-}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -35,7 +33,6 @@ ul {
   justify-content: space-between;
   width: 100%;
   padding: 0px;
-  background: linear-gradient(#fdfcfa 65%, transparent);
   z-index: 10;
 }
 
