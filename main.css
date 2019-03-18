@@ -11,6 +11,7 @@ a {
   color: rgb(42, 64, 130)
 }
 
+
 a:hover {
   color: rgb(50, 76, 147)
 }
@@ -534,16 +535,7 @@ margin:0;
 
 }
 
-.deg140 { transform: rotate(40deg) translate(180px); }
-.deg150 { transform: rotate(30deg) translate(180px); }
-.deg160 { transform: rotate(20deg) translate(180px); }
-.deg170 { transform: rotate(10deg) translate(180px); }
-.deg180 { transform: rotate(0deg) translate(180px); }
-.deg190 { transform: rotate(350deg) translate(180px) ; }
-.deg200 { transform: rotate(340deg) translate(180px) ; }
-.deg210 { transform: rotate(330deg) translate(180px) ; }
-.deg220 { transform: rotate(320deg) translate(180px) ; }
-.deg230 { transform: rotate(310deg) translate(180px) ; }
+
 
 
 
