@@ -67,7 +67,7 @@
 
 <section id="section1" class="cd-section">
 	<div class="content-wrapper">
-        <h1>Skill Set<b>#</b></h1>
+        <div class="hidden"> <img src="img/skills.png" alt="project image" style="width: 200px;"></div>
         <div class="main">
                 <div class="progressBar">
                     <div class="title htmlColor">HTML5</div>
@@ -109,6 +109,7 @@
             <div class="cd-intro-block">
                     <div class="content-wrapper">
                         <h1>Portfolio</h1>
+                        <div class="hidden"> <img src="img/portfolio.png" alt="project image" style="width: 300px;"></div>
                         <a href="#0" class='cd-btn' data-action="show-projects">Show projects</a>
                         <a href="#section3" class="cd-scroll-down cd-image-replace">scroll down</a>
                     </div>
@@ -238,8 +239,8 @@
                     <section class="profile section-padding">
                         <div class="container">
                             <div class="picture-resume-wrapper">
-                        <div class="picture-resume">
-                                <span><img src="img/patpic.jpg" id="w" alt="Patrick" /></span>
+                        <div class="hidden">
+                                <span><img src="img/patpic.jpg" id="w" alt="Patrick Alcidor" /></span>
                       
                       </div>
                          <div class="clearfix"></div>
@@ -258,7 +259,7 @@
                               <li>Home</li>
                           </ul>
                         <ul class="list-content ">
-                            <li>+1 212 646 787 6436</li> <!-- YOUR PHONE NUMBER  -->
+                            <li>+1 646 787 6436</li> <!-- YOUR PHONE NUMBER  -->
                             <li>p.edward.alcindor@gmail.com</li> <!-- YOUR EMAIL -->
                             <li><a href="#">patrickalcindor.com</a></li> <!-- YOUR WEBSITE  -->
                             <li>New York, NY</li> <!-- YOUR STATE AND COUNTRY  -->
@@ -385,7 +386,7 @@
 
 <section id="section4" class="cd-section">
 	<div class="content-wrapper">
-		<h2>About Me</h2>
+         <div class="hidden"> <img src="img/aboutme.png" alt="project image" style="width: 300px;"></div>
 		<p>I am an individual with diverse interests and 20+ years in healthcare, but a few years ago events in my life have forged my trajectory to follow through on my passion and love for Health Information Technology.
         <p>I have special insights in the field of Healthcare with 20+ years experience and have a vision for software to improve certain aspects of Healthcare IT. I have owned and manage several retail pharmacies and developed HIPAA compliance guidelines for these pharmacies. </p> 
         <p>I like to code on my free time working on passion projects in software development in Health IT. </p>            
@@ -448,7 +449,43 @@ var select = function(s) {
       }
       
       tl.seek(50);
-      </script>
+</script>
+
+<script>
+var animateHTML = function() {
+    var elems;
+    var windowHeight;
+    function init() {
+      elems = document.querySelectorAll('.hidden');
+      windowHeight = window.innerHeight;
+      addEventHandlers();
+      checkPosition();
+    }
+    function addEventHandlers() {
+      window.addEventListener('scroll', checkPosition);
+      window.addEventListener('resize', init);
+    }
+    var myBounce;
+    function checkPosition() {
+        myBounce=setTimeout(function() {
+      for (var i = 0; i < elems.length; i++) {
+        var positionFromTop = elems[i].getBoundingClientRect().top;
+        if (positionFromTop - windowHeight <= 0) {
+          elems[i].className = elems[i].className.replace(
+            'hidden',
+            'bounceIn'
+          ); 
+        }
+      }
+    }, 500);
+    }
+
+    return {
+      init: init
+    };
+  };
+  animateHTML().init();
+  </script>
 <script src="js/jquery.mobile.custom.min.js"></script>
 <script src="main3.js"></script> <!-- Resource jQuery -->
 <script src="main4.js"></script> <!-- Resource jQuery -->
