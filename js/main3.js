@@ -3,6 +3,7 @@ jQuery(document).ready(function(){
 		projectsContainer = $('.cd-projects-wrapper'),
 		projectsSlider = projectsContainer.children('.cd-slider'),
 		singleProjectContent = $('.cd-project-content'),
+		singleProjectContent2 = $('.cd-project-content2'),
 		sliderNav = $('.cd-slider-navigation');
 
 	var resizing = false;
@@ -54,6 +55,25 @@ jQuery(document).ready(function(){
 		event.preventDefault();
 		singleProjectContent.removeClass('is-visible');
 	});
+
+		//select a single project 2 - open project-content panel
+		projectsContainer.on('click', '.cd-slider a', function(event) {
+			var mq = checkMQ();
+			event.preventDefault();
+			if( $(this).parent('li').next('li').is('.current') && (mq == 'desktop') ) {
+				prevSides(projectsSlider);
+			} else if ( $(this).parent('li').prev('li').prev('li').prev('li').is('.current')  && (mq == 'desktop') ) {
+				nextSides(projectsSlider);
+			} else {
+				singleProjectContent2.addClass('is-visible');
+			}
+		});
+	
+		//close single project content
+		singleProjectContent2.on('click', '.close', function(event){
+			event.preventDefault();
+			singleProjectContent2.removeClass('is-visible');
+		});
 
 	//go to next/pre slide - clicking on the next/prev arrow
 	sliderNav.on('click', '.next', function(){

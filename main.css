@@ -100,6 +100,15 @@ ul {
     font-size: 30px;
     font-size: 1.875rem;
   }
+  .my-name {
+    font-size: 20px;
+    margin: 0;
+    position: absolute;
+    left: 0px;;
+    top: 0px;
+    text-shadow: 0 0 5px #0003;
+  }
+
 }
 @media only screen and (min-width: 1170px) {
   #cd-intro {
@@ -475,6 +484,11 @@ margin:0;
   padding: 0 10px;
 }
 
+.skills {
+  margin-top: 25px;
+  padding: 25px;
+}
+
 .aboutme {
   font-size: 13px;
   padding: 0 25px;
@@ -578,13 +592,12 @@ margin:0;
     flex-direction: column;
 }
 .my-name {
-    font-size: 30px;
-    margin: 0;
-    position: absolute;
-    left: calc(50% - 150px);
-    top: 15px;
-    z-index: -10;
-    text-shadow: 0 0 5px #0003;
+  font-size: 20px;
+  margin: 0;
+  position: absolute;
+  left: 0px;;
+  top: 0px;
+  text-shadow: 0 0 5px #0003;
 }
 .menu-bar {
     position: relative;

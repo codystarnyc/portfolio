@@ -3717,14 +3717,7 @@
     width: 90%;
   }
 }
-body {
-  background: #fafafa url('grey.png'); /* http://subtlepatterns.com/subtle-grey/ */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 62.5%;
-  line-height: 1;
-  color: #616161;
-  padding: 35px 0;
-}
+
 
 br { display: block; line-height: 1.6em; } 
 
@@ -3767,15 +3760,8 @@ p {
   font-size: 1.4em;
   line-height: 1.55em;
   margin-bottom: 12px;
-  color: #356492;
 }
 
-a { 
-  color: #8eadd2;
-}
-a:hover {
-  color: #6e91b9;
-}
 
 
 /* page structure */
@@ -3797,13 +3783,18 @@ a:hover {
 #p {
     align-items:center;
     align-content:center;
+  
 }
 #ghapidata {
   display: block;
   padding: 25px 0;
   color: blue;
 }
-
+#ghapidata p {
+  display: block;
+  padding: 25px 0;
+  color: rgb(25, 221, 84);
+}
 
 
 #loader {
@@ -3822,7 +3813,6 @@ a:hover {
 }
 
 .avi {
-  float: left;
   margin-right: 7px;
   margin-bottom: 7px;
 }
@@ -3889,10 +3879,12 @@ a:hover {
   display: block;
   padding: 5px 8px;
   font-size: 1.4em;
-  color: #666;
+  color: rgb(55, 170, 74);
   width: 200px;
   margin-bottom: 15px;
 }
+
+
 
 #me{
   border-radius: 50px;
