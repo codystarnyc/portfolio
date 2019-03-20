@@ -36,7 +36,15 @@ ul {
   justify-content: space-between;
   width: 100%;
   padding: 0px;
+  z-index: 500;
+}
 
+.skillz{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 50%;
+  padding: 0px;
   z-index: 500;
 }
 
